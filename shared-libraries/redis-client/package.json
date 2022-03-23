@@ -1,0 +1,27 @@
+{
+  "name": "redis-client",
+  "version": "1.0.0",
+  "description": "Redis client wrapper for queues and key value stores",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run test"
+  },
+  "keywords": [
+    "redis",
+    "key",
+    "value",
+    "queue"
+  ],
+  "author": "SMH Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@types/redis": "^2.8.28"
+  },
+  "dependencies": {
+    "envalid": "^7.0.0",
+    "redis": "^3.1.2"
+  }
+}

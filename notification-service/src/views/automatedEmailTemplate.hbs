@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .card {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #E0E0E0;
+      border-radius: 3px;
+      padding: 16px;
+      max-width: 512px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .title {
+      color: #28408a;
+      width: 100%;
+    }
+    ul {
+      color: #00030a;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">
+      <h2> {{notification.actionType}}</h2>
+    </div>
+  
+    <strong>Details for event</strong>
+    <ul>
+      <li> <strong>Company: </strong> Bosta</li>
+      <li> <strong>Description: </strong>  {{notification.description}}</li>
+      <li> <strong>Email sending type: </strong>  {{notification.sendingType}}</li>
+      <li> <strong>Date of action: </strong> {{dateNow}}</li>
+    </ul>
+    <br> <br>
+    <div style="color: #757575; margin-left: auto;  margin-right: auto; text-align: center;">
+      <small>⚡ This email is {{notification.sendingType}} ⚡</small> <br>
+      <small>Have a good day ^_^</small>
+    </div>
+  </div>
+</body>
+</html>

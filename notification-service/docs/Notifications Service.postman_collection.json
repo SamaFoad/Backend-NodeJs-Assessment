@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "4344eba2-ddb3-48f3-b09f-059d1e195729",
+		"name": "Notifications Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3006/api/notifications?limit=10&page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "sort_by",
+							"value": "id",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Notification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3006/api/notifications/35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"notifications",
+						"35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sender\": \"siliconmind@gmail.com\",\r\n    \"reciever\": \"eng.sama.foad@gmail.com\",\r\n    \"isSent\": false,\r\n    \"actionType\": \"xxx\",\r\n    \"sendingType\" : \"manual\",\r\n    \"description\": \"hopaa\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3006/api/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tenants' Admin Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/api/tenants/emails?subRegionCode=034",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"tenants",
+						"emails"
+					],
+					"query": [
+						{
+							"key": "subRegionCode",
+							"value": "034"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

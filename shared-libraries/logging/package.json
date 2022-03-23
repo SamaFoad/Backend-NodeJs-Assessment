@@ -1,0 +1,32 @@
+{
+  "name": "logging",
+  "version": "1.0.0",
+  "description": "Logging utilities for SMH services",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "logging",
+    "debugging",
+    "centralized-logging",
+    "request-logging-middleware",
+    "log-format"
+  ],
+  "author": "SMH Team",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cls-rtracer": "^2.6.0",
+    "envalid": "^7.0.0",
+    "fecha": "^4.2.0",
+    "uuidv4": "^6.2.12",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0",
+    "winston-elasticsearch": "^0.13.0",
+    "winston-syslog": "^2.4.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11"
+  }
+}

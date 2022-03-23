@@ -1,0 +1,19 @@
+{
+  "name": "http-client",
+  "version": "1.0.0",
+  "description": "A wrapper http client for the use with SMH",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run test"
+  },
+  "author": "SMH Team",
+  "license": "ISC",
+  "dependencies": {
+    "@types/qs": "^6.9.6",
+    "axios": "^0.21.1",
+    "form-data": "^4.0.0",
+    "qs": "^6.10.1"
+  }
+}
